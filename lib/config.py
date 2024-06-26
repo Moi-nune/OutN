@@ -2,7 +2,7 @@ import os
 
 # variables
 
-TKN = os.environ['Token']
+TKN = os.environ['token']
 
 rpingconfirm = os.environ['rpingconfirm']
 regpingconfirm = os.environ['regpingconfirm']
