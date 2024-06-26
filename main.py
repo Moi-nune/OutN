@@ -1,6 +1,7 @@
 import sys
 import discord
 from discord.ext import commands
+import keep_alive
 
 sys.path.append('lib')
 from config import get_config, TKN, clogconfirm
@@ -69,4 +70,5 @@ async def on_message(message):
         await identifycmd(message, url)
 
 
+keep_alive.keep_alive()
 bot.run(TKN)
