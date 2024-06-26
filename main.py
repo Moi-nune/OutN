@@ -4,16 +4,13 @@ from discord.ext import commands
 import keep_alive
 
 sys.path.append('lib')
-from config import get_config, TKN, clogconfirm
+from config import TKN, clogconfirm
 from TheOutNModule import outnmodule, identifycmd
 import hint_helper
 import catch_helper
 import cmd_embeds
 
 version = 'v8'
-
-#config
-get_config()
 
 #bot setup
 intents = discord.Intents.all()
